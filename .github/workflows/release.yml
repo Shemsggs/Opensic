@@ -14,6 +14,10 @@ jobs:
         with:
           channel: stable
           cache: true
+      - name: Verify tag matches package version
+        run: |
+          version="$(sed -n 's/^version: \([^+]*\).*/\1/p' pubspec.yaml)"
+          test "$GITHUB_REF_NAME" = "v$version"
       - name: Create Android scaffold if missing
         run: flutter create --platforms=android --org org.opensic --project-name opensic .
       - name: Dependencies
