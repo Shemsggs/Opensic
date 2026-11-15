@@ -27,7 +27,9 @@ jobs:
       - name: Tests
         run: flutter test
       - name: Build development release APK
-        run: flutter build apk --release
+        env:
+          AUDIUS_API_KEY: ${{ secrets.AUDIUS_API_KEY }}
+        run: flutter build apk --release --dart-define=AUDIUS_API_KEY="$AUDIUS_API_KEY"
       - name: Publish APK pre-release
         uses: softprops/action-gh-release@v2
         with:
