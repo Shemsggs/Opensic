@@ -2,7 +2,7 @@
 
 An open-source, ad-free Flutter music player for Android. Purple Material 3 UI, offline local library, Audius music discovery, saved HTTPS streams, favorites, playlists, queue, seek, shuffle, repeat, and background audio service integration.
 
-> **Status: development source (v0.3.1), not a verified production release.** Audius discovery uses its public read API; an optional API key raises the rate limit.
+> **Status: development source (v0.3.2), not a verified production release.** Audius discovery uses its public read API; an optional API key raises the rate limit.
 
 ## Quick start
 
@@ -30,7 +30,7 @@ The API key is sent in the `x-api-key` request header; never use the API secret 
 
 ## GitHub releases
 
-Push a version tag matching `pubspec.yaml`, such as `v0.3.1`, to run the Android Release workflow. It runs analysis and tests, builds the APK, and publishes it as a GitHub pre-release.
+Push a version tag matching `pubspec.yaml`, such as `v0.3.2`, to run the Android Release workflow. It runs analysis and tests, builds the APK, and publishes it as a GitHub pre-release.
 
 These are development APKs signed with the Android debug key, not production or Play Store releases. A permanent release requires a private signing keystore configured as GitHub Actions secrets; never commit signing keys to this repository. No release should be considered device-tested until it has been installed and exercised on Android hardware.
 
