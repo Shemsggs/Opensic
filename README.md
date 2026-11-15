@@ -2,7 +2,7 @@
 
 An open-source, ad-free Flutter music player for Android. Purple Material 3 UI, offline local library, saved HTTPS streams, favorites, playlists, queue, seek, shuffle, repeat, and background audio service integration.
 
-> **Status: development source (v0.3.0), not a verified production release.** The project has not been compiled or device-tested by its authoring environment. GitHub Actions builds an APK when CI succeeds. The current online mode is *direct URLs only*; it does **not** offer a licensed Spotify-like music catalog, cloud sync, or automatic online search.
+> **Status: development source (v0.3.1), not a verified production release.** The current online mode is *direct URLs only*; it does **not** offer a licensed Spotify-like music catalog, cloud sync, or automatic online search.
 
 ## Quick start
 
@@ -19,7 +19,7 @@ Alternatively, push to GitHub and use **Actions → Android APK → Run workflow
 
 ## GitHub releases
 
-Push a version tag such as `v0.3.0` to run the Android Release workflow. It runs analysis and tests, builds the APK, and publishes it as a GitHub pre-release.
+Push a version tag matching `pubspec.yaml`, such as `v0.3.1`, to run the Android Release workflow. It runs analysis and tests, builds the APK, and publishes it as a GitHub pre-release.
 
 These are development APKs signed with the Android debug key, not production or Play Store releases. A permanent release requires a private signing keystore configured as GitHub Actions secrets; never commit signing keys to this repository. No release should be considered device-tested until it has been installed and exercised on Android hardware.
 
